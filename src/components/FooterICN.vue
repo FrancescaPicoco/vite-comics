@@ -39,14 +39,14 @@ export default{
 
 <style scoped>
 #footerICNcont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .footerICNcont{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0.5rem;
 }
 span{
     color: rgb(49, 49, 206);

@@ -41,4 +41,8 @@ export default{
     display: flex;
     justify-content: center;
 }
+.rgt-foot , .lft-foot{
+    display: flex;
+    align-items: center;
+}
 </style>

@@ -3,18 +3,52 @@ export default{
     nome :"FooterTop",
     data(){
         return{
+           current:0, 
            footerBg: "/img/footer-bg.jpg",
+           footer2Bg:"/img/dc-logo-bg.png",
            infos: [
             {
                 titolo: "DC COMICS",
                 info: [
-                    "prova uno" ,
-                    "prova due" ,
-                    "prova tre"
+                    {
+                        desc:"1",
+                    },
+                    {
+                        desc:"2",
+                    },
+                    {
+                        desc:"3",
+                    }
+                ]
+            }, 
+            {
+                titolo: "DC",
+                info: [
+                    {
+                        desc:"1",
+                    },
+                    {
+                        desc:"2",
+                    },
+                    {
+                        desc:"3",
+                    }
                 ]
             },
-           
-           
+            {
+                titolo: "SHOP",
+                info: [
+                    {
+                        desc:"1",
+                    },
+                    {
+                        desc:"2",
+                    },
+                    {
+                        desc:"3",
+                    }
+                ]
+            },         
            ]
         }
     }
@@ -23,10 +57,13 @@ export default{
 
 <template>
     <div id="footerBG">
-        <img :src="this.footerBg">
+        <img :src="this.footerBg" id="bg-foot1">
+        <div class="square">
+            <img :src="this.footer2Bg" class="bg-foot2">
+        </div>
         <div class="footer-mini-contain">
-            <ul  v-for= "( informazione ) in infos">{{ informazione.titolo }}
-                <li>{{this.info}}</li>
+            <ul  v-for= "( informazione) in infos">{{ informazione.titolo }}
+                <li>{{ informazione.info.desc }}</li>
             </ul>
         </div>
     </div>
@@ -36,10 +73,21 @@ export default{
 *{
     color: aliceblue;
 }
-img{ 
+#bg-foot1{ 
     width: 100%;
     height: 50vh;
     object-fit: cover;
+}
+.square{
+    width: 500px;
+    height: 50vh;
+    transform: translate(160% , -100%);
+}
+.square > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 #footerBG{
     height: 50vh;
@@ -49,5 +97,4 @@ img{
     width: 20%;
     transform: translate(80% , -850%);
 }
-
 </style>

@@ -45,7 +45,7 @@ export default{
 
 <style scoped>
 #blueone{
-    background-color: #646cff;
+    background-color: rgb(2, 130, 249);
 }
 #container-serv{
     width: 80vw;

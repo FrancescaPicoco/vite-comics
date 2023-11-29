@@ -99,5 +99,6 @@ export default{
     width: 80vw;
     margin-right: auto;
     margin-left: auto;
+    padding: 3rem;
 } 
 </style> 

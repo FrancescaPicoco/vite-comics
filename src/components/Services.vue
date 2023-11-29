@@ -48,12 +48,13 @@ export default{
     background-color: #646cff;
 }
 #container-serv{
-    width: 70vw;
+    width: 80vw;
     height: 15vh;
-    transform: translate(20%);
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 #single-card{
     display: flex;
@@ -61,9 +62,9 @@ export default{
     margin: 0 1rem;
 }
 img{
-    width: 30px;
+    width: 35px;
 }
 span{
-    font-size: 10px;
+    font-size: 16px;
 }
 </style>

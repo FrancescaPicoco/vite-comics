@@ -29,7 +29,7 @@ export default{
 
 </template>
 
-<style>
+<style scoped>
 #footer-container{
     display: flex;
     justify-content: space-between;

@@ -16,11 +16,14 @@ export default{
     </div>
 </template>
 
-<style>
-
+<style scoped>
+#jumbo{
+    height: 50vh;
+}
   img{
     width: 100%;
-    height: 30%;
+    height: 100%;
     object-fit: cover;
+    object-position: top;
   }
 </style>

@@ -49,7 +49,7 @@ export default{
 }
 #container-serv{
     width: 70vw;
-    height: 20vh;
+    height: 15vh;
     transform: translate(20%);
     display: flex;
     align-items: center;

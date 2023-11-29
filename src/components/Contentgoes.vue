@@ -11,7 +11,7 @@ export default{
 
 <template>
     <div id="content">
-        <h1>--CONTENT GOES HERE--</h1>
+        <h3>--CONTENT GOES HERE--</h3>
     </div>
     
 </template>

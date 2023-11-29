@@ -60,8 +60,7 @@ export default{
         <nav>
             <a v-for="link in links" href="link.address"> {{ link.label }}</a>     
         </nav>
-    </section>
-    
+    </section>   
 </template>
 
 <style scoped>

@@ -3,22 +3,15 @@ export default{
     nome :"FooterTop",
     data(){
         return{
-           current:0, 
            footerBg: "/img/footer-bg.jpg",
            footer2Bg:"/img/dc-logo-bg.png",
+           current:0,
            infos: [
             {
                 titolo: "DC COMICS",
                 info: [
-                    {
-                        desc:"1",
-                    },
-                    {
-                        desc:"2",
-                    },
-                    {
-                        desc:"3",
-                    }
+                    "1",
+                    "2"
                 ]
             }, 
             {
@@ -62,8 +55,8 @@ export default{
             <img :src="this.footer2Bg" class="bg-foot2">
         </div>
         <div class="footer-mini-contain">
-            <ul  v-for= "( informazione) in infos">{{ informazione.titolo }}
-                <li>{{ informazione.info.desc }}</li>
+            <ul  v-for= "( informazione , current) in infos">{{ informazione.titolo }}
+                <li>{{ informazione.info[current]}}</li>
             </ul>
         </div>
     </div>
@@ -95,6 +88,6 @@ export default{
 .footer-mini-contain{
     background-color: rgba(95, 158, 160, 0.395);
     width: 20%;
-    transform: translate(80% , -850%);
+    transform: translate(80% , -400%);
 }
 </style>

@@ -8,7 +8,26 @@ export default{
     nome :"Footer",
     data(){
         return{
-           
+            icons:[
+                {
+                    follow: "FOLLOW US",
+                },
+                {
+                    socialIcn : 'img/footer-facebook.png'
+                },
+                {
+                    socialIcn : 'img/footer-twitter.png'
+                },
+                {
+                    socialIcn : 'img/footer-youtube.png'
+                },
+                {
+                    socialIcn : 'img/footer-pinterest.png'
+                },
+                {
+                    socialIcn : 'img/footer-periscope.png'
+                },
+            ]
         }
     }
 }
@@ -21,7 +40,7 @@ export default{
                 <button>SING-UP NOW</button>
             </div>
             <div class="rgt-foot">
-                <FooterICN />
+                <FooterICN v-for="iconafooter in icons" :footerIcnProps="iconafooter"/>
             </div>
         </div>
     </div>

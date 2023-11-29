@@ -1,28 +1,9 @@
 <script>
 export default{
     nome:"FooterICN",
+    props:["footerIcnProps"],
     data(){
         return{            
-            icons:[
-                {
-                    follow: "FOLLOW US",
-                },
-                {
-                    socialIcn : 'img/footer-facebook.png'
-                },
-                {
-                    socialIcn : 'img/footer-twitter.png'
-                },
-                {
-                    socialIcn : 'img/footer-youtube.png'
-                },
-                {
-                    socialIcn : 'img/footer-pinterest.png'
-                },
-                {
-                    socialIcn : 'img/footer-periscope.png'
-                },
-            ]
         }
     }
 }
@@ -30,9 +11,9 @@ export default{
 
 <template>
     <div id="footerICNcont">
-        <div v-for="iconafooter in icons" class="footerICNcont">
-            <span>{{ iconafooter.follow }}</span>
-            <img :src="iconafooter.socialIcn">
+        <div  class="footerICNcont">
+            <span>{{ footerIcnProps.follow }}</span>
+            <img :src="footerIcnProps.socialIcn">
         </div>
     </div>    
 </template>
